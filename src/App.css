@@ -1,0 +1,189 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  /* background-color: #333; */
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.post-item {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.post-item:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.post-title {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.post-excerpt {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size: 0.9em;
+}
+
+.post-detail {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.post-content {
+  margin-top: 20px;
+}
+
+.post-image {
+  max-width: 38%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.back-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Center the post list container */
+.post-list-container {
+  margin: 150px auto 0; /* Adjust the top margin to center vertically */
+  max-width: 90%; /* Adjust the width to center horizontally */
+  overflow-x: auto;
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+  white-space: nowrap;
+}
+
+/* Center the post list items */
+.post-list.horizontal-scroll {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  
+}
+
+.post-item {
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  min-width: 300px; /* Adjust this width as needed */
+  margin: 0 10px; /* Adjust the margin for spacing between cards */
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(50, 50, 93, 0.11), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional card styling */
+.post-item .card-body {
+  padding: 20px;
+}
+
+.post-item .post-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-item .post-excerpt {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.post-item .read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.post-item .read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Additional CSS for styling the pagination controls */
+.pagination-controls {
+  position: fixed; /* Position the pagination controls at the right corner */
+bottom : 20px;
+  right: 20px; /* Position horizontally at the right with some margin */
+  transform: translateY(-50%); /* Adjust the vertical position to center */
+  display: flex;
+  flex-direction: row; /* Stack the controls horizontally */
+  justify-content: center; /* Center the controls horizontally */
+}
+
+.pagination-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure that the content doesn't overflow the card */
+.post-title,
+.post-excerpt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* This might need to be adjusted for multiline titles/excerpts */
+}
+
+.back-link{
+ left : 20px;
+  position: fixed;
+  top : 20px; 
+  right: 20px;
+  text-decoration: none;
+  color: #ba3b3b;
+  font-size: 16px;
+  transition: color 0.3s ease;
+
+}
+
